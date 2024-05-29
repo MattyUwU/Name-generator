@@ -1,0 +1,25 @@
+import sys
+import random
+
+print("Welcome to generate stupid names")
+print("Name at as Gas in serial The Psyhc")
+
+first = ['Baby oil', 'Duck', 'Sweetie', 'Honeybun', 'Henry', 'Cutiepie', 'Darling', 'Cuddlebug', 'Sparkles', 'Angel',
+         'Bad news', 'Snugglebear', 'Sunshine', 'Bumblebee', 'Cupcake', 'Lovebug', 'Pumpkin', 'Sugarplum', 'Smiley',
+         'Teddybear', 'Sweetpea', 'Precious', 'Buttercup', 'Willy', 'Gas', 'Goose', 'Snickerdoodle', 'Babydoll',
+         'Muffin', 'Shimmer', 'Cheeky', 'Pookie', 'Billy']
+
+last = ['Sprinkles', 'Rainbow', 'Jellybean', 'Moonbeam', 'Dazzle', 'Giggles', 'Little Lamb', 'Flowerchild', 'Cherub',
+        'Twinkletoes', 'Dreamboat', 'Sprout', 'Sugarcookie', 'Lovebird', 'Bunnyhop', 'Angelic', 'Sweetheart',
+        'Cutiepatootie', 'Kanty', 'Spider cat', 'Idk', 'Glitterbug', 'Sweetsie', 'Venanrir', 'Lego']
+
+while True:
+    firstName = random.choice(first)
+    lastName = random.choice(last)
+    print("{} {}".format(firstName, lastName), file=sys.stderr)
+
+    try_again = input("Press 'n' to exit, or enter to continue generating: ").lower()
+    if try_again == "n":
+        print("Program ended")
+        break
+input("\n Press enter for end program")
